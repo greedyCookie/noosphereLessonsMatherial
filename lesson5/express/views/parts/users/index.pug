@@ -1,0 +1,16 @@
+var users = #{users}
+block usr
+  table 
+    thead
+    tr
+      th Name 
+      th Email
+      th gender
+    tbody
+    each val in users
+      tr
+        td= val.first_name
+        td= val.email
+        td= val.gender
+
+	
