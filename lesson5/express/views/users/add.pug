@@ -1,0 +1,18 @@
+
+form(method='POST' action='/users/add' class='form')
+  div.form-group
+    label(for='name') First name:
+    input#name.form-control(type='text', placeholder='first' name='first_name')
+  div.form-group
+    label(for='name') Last name:
+    input#name.form-control(type='text', placeholder='first' name='last_name')
+  div.form-group
+    label(for='email') Email:
+    input#email.form-control(type='email', placeholder='name@email.com' name='email')
+  div.form-group
+    label(for='favoriteBook') gender:
+    select#propertyType.select.form-control.input-lg(name='gender')
+      option(value='0') -- Select --
+      option(value='female') Female
+      option(value='male') Male
+  button.btn.btn-primary(type='submit') Sign up
